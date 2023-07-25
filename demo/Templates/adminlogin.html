@@ -1,0 +1,54 @@
+{% include "header.html" %}
+
+	<!-- end #menu -->
+	<div id="page">
+		<div id="page-bgtop">
+			<div id="page-bgbtm">
+				<div id="page-content">
+					<div id="content">
+						<div class="post">
+							<h2 class="title"><a href="#">Admin Login  Pannel </a></h2>
+						</div>
+						<hr color="Orange">
+						<form method="post" action="admin-check">
+							{% csrf_token %}
+						   Username<input type="text" class="form-control" name="txtUsername" placeholder="Enter the Username"><br><br>
+						   Password <input type="password" class="form-control" name="txtPassword">
+						   <br><br>
+						   <input type="submit" value="Login" class="btn btn-success" >
+						</form>
+
+
+						<div style="clear: both;">&nbsp;</div>
+					</div>
+					<!-- end #content -->
+					<div id="sidebar">
+						<ul>
+							<li>
+								<h2>Aliquam tempus</h2>
+								<p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer hendrerit.</p>
+							</li>
+							<li>
+								<h2>CATEGERIES</h2>
+								<P>Alige Libros Consector adipising elit Metus aliqum pellentesque Suspendise iccalie marum uranenetnon melestic semper Proin gravida orci portitor</P>
+							</li>
+							<li>
+								<h2>Blogroll</h2>
+								<p>Aliqurum Theme Connector afrification slot Metus alliqum reflection</p>
+							</li>
+						</ul>
+					</div>
+					<!-- end #sidebar -->
+				</div>
+				<div style="clear: both;">&nbsp;</div>
+			</div>
+		</div>
+	</div>
+	<!-- end #page -->
+</div>
+<div id="footer">
+	<p> Design by <a href="http://www.freecsstemplates.org/">Saloni Machewar</a>.</p>
+</div>
+<!-- end #footer -->
+</body>
+</html>
